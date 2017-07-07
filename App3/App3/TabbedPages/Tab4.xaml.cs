@@ -7,15 +7,13 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App3.MasterPages
+namespace App3.TabbedPages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MyMenu : ContentPage
+    public partial class Tab4 : ContentPage
     {
-        public MyMenu()
+        public Tab4()
         {
-
-            Padding=new Thickness(0, 20, 0, 20);
             InitializeComponent();
         }
     }

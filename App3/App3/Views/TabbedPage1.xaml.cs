@@ -15,10 +15,12 @@ namespace App3.Views
     {
         public TabbedPage1()
         {
+
+ 
             Children.Add(new Tab1());
             Children.Add(new Tab2());
             Children.Add(new Tab3());
-          
+            Children.Add(new Tab4());
             Title = "METU NCC MOBILE";
 
         }

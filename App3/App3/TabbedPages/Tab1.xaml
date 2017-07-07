@@ -39,8 +39,7 @@
                         </TableSection>
 
                         <TableSection Title="EntryCell">
-                            <EntryCell Text="Text It!">
-                            </EntryCell>
+                            <EntryCell Placeholder="Text It!" HorizontalTextAlignment="Center"></EntryCell>
                         </TableSection>
                     </TableRoot>
                 </TableView>

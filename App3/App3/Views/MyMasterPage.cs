@@ -13,7 +13,6 @@ namespace App3.Views
         public MyMasterPage()
         {
 
-
             Master = new MyMenu();
             Detail = new TabbedPage1();
         }

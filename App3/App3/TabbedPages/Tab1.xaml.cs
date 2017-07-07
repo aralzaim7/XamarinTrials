@@ -17,10 +17,6 @@ namespace App3.TabbedPages
             InitializeComponent();
             myDatePicker.MinimumDate = DateTime.Now;
             myDatePicker.Format = "dd-MM-yyyy";
-
-
-
-
         }
 
 

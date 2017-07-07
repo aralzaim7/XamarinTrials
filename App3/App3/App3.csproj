@@ -60,6 +60,9 @@
     <Compile Include="TabbedPages\Tab3.xaml.cs">
       <DependentUpon>Tab3.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TabbedPages\Tab4.xaml.cs">
+      <DependentUpon>Tab4.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utility\Grouping.cs" />
     <Compile Include="Views\MyCarouselPage.cs" />
     <Compile Include="Views\MyContentPage.xaml.cs">
@@ -119,7 +122,12 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="TabbedPages\Tab4.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="TabbedPages\Tab1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
