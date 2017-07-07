@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.TabbedPages.Tab2"
+             
+             Title="Tab2">
+
+    <!--  IsGroupingEnabled="True"
+                          GroupDisplayBinding="{Binding Key}"
+                          GroupShortNameBinding="{Binding Key}"?-->
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Button Text="Get Data!" Clicked="Button_Clicked"></Button>
+            <ActivityIndicator x:Name="getdataload"></ActivityIndicator>
+            <ListView x:Name="lst" 
+                          ItemsSource="{Binding}" 
+                          IsVisible="false" 
+                          ItemSelected="lst_ItemSelected"
+                          IsPullToRefreshEnabled="true"
+                          Refreshing="lst_Refreshing">
+                <ListView.Header>
+                    <ContentView Padding="0,5">
+                        <Label Text="METU PHONEBOOKS" HorizontalOptions="Center"></Label>
+                    </ContentView>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Email" CommandParameter="{Binding}" IsDestructive="false" Clicked="MenuItem_Clicked_1"></MenuItem>
+                                <MenuItem Text="Delete" CommandParameter="{Binding}" IsDestructive="true" Clicked="MenuItem_Clicked"></MenuItem>
+                            </ViewCell.ContextActions>
+                            <StackLayout Orientation="Horizontal" Padding="10,0,10,10">
+                                <Label Text="{Binding FirstLastName}" FontSize="Small" HorizontalOptions="StartAndExpand"></Label>
+                                <Label Text="{Binding officeTel}" FontSize="Small" HorizontalOptions="End"></Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+
+    </ContentPage.Content>
+
+
+</ContentPage>

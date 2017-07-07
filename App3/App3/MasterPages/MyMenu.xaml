@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.MasterPages.MyMenu"
+             Title="MyMenu"
+             BackgroundColor="Red"
+             >
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="White" Orientation="Vertical">
+
+                <StackLayout HorizontalOptions="Center">
+                    <Image Source="logo.png"></Image>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Spacing="20" VerticalOptions="Fill" BackgroundColor="Red">
+                    <Label Text="Hakkımızda" TextColor="White"></Label>
+                    <Label Text="Akademik" TextColor="White"></Label>
+                    <Label Text="Araştırma" TextColor="White"></Label>
+                    <Label Text="Öğrenciler" TextColor="White"></Label>
+                    <Label Text="Kampusta Yaşam" TextColor="White"></Label>
+                    <Label Text="Mezunlar" TextColor="White"></Label>
+                    <Label Text="İş Olanakları" TextColor="White"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="End">
+                    <Label TextColor="DarkViolet" Text="ncc.metu.edu.tr" x:Name="lbl"></Label>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

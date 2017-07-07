@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.TabbedPages.Tab1"
+             BackgroundColor="White"
+             Title="Tab1">
+
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout Padding="0,30,0,30" Orientation="Vertical">
+
+                <Button Text="Load me!" x:Name="loadbutton" Clicked="Button_Clicked"></Button>
+
+                <ActivityIndicator x:Name="loadicon" IsVisible="False" IsRunning="False"></ActivityIndicator>
+                <DatePicker x:Name="myDatePicker" DateSelected="myDatePicker_DateSelected"></DatePicker>
+
+                <Entry x:Name="textentry" FontFamily="Calibri" FontAttributes="Bold" FontSize="Medium" HorizontalTextAlignment="Start" Placeholder="Enter a Text!" PlaceholderColor="Gray"></Entry>
+                <Button Text="Show Text!" Clicked="Button_Clicked_1"></Button>
+
+                <Editor x:Name="texteditor" FontAttributes="Italic" FontFamily="Arial" FontSize="Medium" 
+                        TextColor="Red" BackgroundColor="DarkBlue" HeightRequest="150">
+                </Editor>
+                <Button Text="Show Editor Text!" Clicked="Button_Clicked_2"></Button>
+
+
+                <ProgressBar x:Name="progressBar" Progress=".70"></ProgressBar>
+
+                <Slider x:Name="slider" Minimum="0"  Maximum="500" Value="250"></Slider>
+                <Label BindingContext="{x:Reference slider}" Text="{Binding Value, StringFormat='{0:F1}'}" x:Name="slidervalue" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                <TableView Intent="Settings">
+                    <TableRoot>
+                        <TableSection Title="Switch Cell">
+
+
+                            <SwitchCell Text="Toggle It"></SwitchCell>
+                            <SwitchCell Text="Toggle It2"></SwitchCell>
+
+                        </TableSection>
+
+                        <TableSection Title="EntryCell">
+                            <EntryCell Text="Text It!">
+                            </EntryCell>
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+                <TimePicker></TimePicker>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>
