@@ -16,11 +16,22 @@ namespace App3.Views
         public TabbedPage1()
         {
 
- 
-            Children.Add(new Tab1());
-            Children.Add(new Tab2());
-            Children.Add(new Tab3());
-            Children.Add(new Tab4());
+            ContentPage tab1= new Tab1();
+   //         tab1.Icon = "controls.png";
+
+            ContentPage tab2 = new Tab2();
+    //        tab2.Icon = "data.png";
+
+            ContentPage tab3 = new Tab3();
+      //      tab3.Icon = "webview.png";
+
+            ContentPage tab4 = new Tab4();
+     //       tab4.Icon = "grid.png";
+
+            Children.Add(tab1);
+            Children.Add(tab2);
+            Children.Add(tab3);
+            Children.Add(tab4);
             Title = "METU NCC MOBILE";
 
         }
